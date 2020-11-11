@@ -6,6 +6,8 @@ import (
 	"net"
 	"sync"
 	"sync/atomic"
+
+	"github.com/davecgh/go-spew/spew"
 )
 
 type packetResponseWriter struct {
@@ -135,13 +137,19 @@ func (s *PacketServer) Serve(conn net.PacketConn) error {
 
 			secret, ctx, err := s.SecretSource.RADIUSSecret(s.ctx, remoteAddr, buff)
 			if err != nil {
+				spew.Dump("Secret issue")
+				spew.Dump(buff)
 				return
 			}
 			if len(secret) == 0 {
+				spew.Dump("Secret is empty")
+				spew.Dump(buff)
 				return
 			}
 
 			if !s.InsecureSkipVerify && !IsAuthenticRequest(buff, secret) {
+				spew.Dump("Not authentic")
+				spew.Dump(buff)
 				return
 			}
 
