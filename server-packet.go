@@ -147,13 +147,13 @@ func (s *PacketServer) Serve(conn net.PacketConn) error {
 				return
 			}
 
-			if !s.InsecureSkipVerify && !IsAuthenticRequest(buff, secret) {
-				spew.Dump("Not authentic")
-				spew.Dump(remoteAddr)
-				spew.Dump(secret)
-				spew.Dump(buff)
-				return
-			}
+			// if !s.InsecureSkipVerify && !IsAuthenticRequest(buff, secret) {
+			// 	spew.Dump("Not authentic")
+			// 	spew.Dump(remoteAddr)
+			// 	spew.Dump(secret)
+			// 	spew.Dump(buff)
+			// 	return
+			// }
 
 			packet, err := Parse(buff, secret)
 			if err != nil {
