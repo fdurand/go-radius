@@ -3,7 +3,7 @@ package dictionarygen
 import (
 	"io"
 
-	"github.com/inverse-inc/go-radius/dictionary"
+	"github.com/fdurand/go-radius/dictionary"
 )
 
 func (g *Generator) genVendor(w io.Writer, vendor *dictionary.Vendor) {

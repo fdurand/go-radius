@@ -8,7 +8,7 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/inverse-inc/go-radius/dictionary"
+	"github.com/fdurand/go-radius/dictionary"
 )
 
 type externalAttribute struct {
@@ -239,10 +239,10 @@ func (g *Generator) Generate(dict *dictionary.Dictionary) ([]byte, error) {
 	}
 	if len(attrs) > 0 || len(vendors) > 0 {
 		p(&w)
-		p(&w, `	radius "github.com/inverse-inc/go-radius"`)
+		p(&w, `	radius "github.com/fdurand/go-radius"`)
 	}
 	if len(vendors) > 0 {
-		p(&w, `	"github.com/inverse-inc/go-radius/rfc2865"`)
+		p(&w, `	"github.com/fdurand/go-radius/rfc2865"`)
 	}
 	if len(externalAttributes) > 0 {
 		printedNewLine := false

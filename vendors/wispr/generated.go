@@ -5,8 +5,8 @@ package wispr
 import (
 	"strconv"
 
-	radius "github.com/inverse-inc/go-radius"
-	"github.com/inverse-inc/go-radius/rfc2865"
+	radius "github.com/fdurand/go-radius"
+	"github.com/fdurand/go-radius/rfc2865"
 )
 
 const (

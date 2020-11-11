@@ -11,8 +11,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/inverse-inc/go-radius/dictionary"
-	"github.com/inverse-inc/go-radius/dictionarygen"
+	"github.com/fdurand/go-radius/dictionary"
+	"github.com/fdurand/go-radius/dictionarygen"
 )
 
 func main() {

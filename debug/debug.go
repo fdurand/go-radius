@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/inverse-inc/go-radius"
-	"github.com/inverse-inc/go-radius/dictionary"
+	"github.com/fdurand/go-radius"
+	"github.com/fdurand/go-radius/dictionary"
 )
 
 type Config struct {

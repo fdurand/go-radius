@@ -5,7 +5,7 @@ package rfc2866
 import (
 	"strconv"
 
-	radius "github.com/inverse-inc/go-radius"
+	radius "github.com/fdurand/go-radius"
 )
 
 const (

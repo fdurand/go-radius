@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/inverse-inc/go-radius"
-	"github.com/inverse-inc/go-radius/rfc2865"
-	"github.com/inverse-inc/go-radius/rfc2869"
+	"github.com/fdurand/go-radius"
+	"github.com/fdurand/go-radius/rfc2865"
+	"github.com/fdurand/go-radius/rfc2869"
 )
 
 func Test_RFC2865_7_1(t *testing.T) {

@@ -14,7 +14,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/inverse-inc/go-radius/dictionary"
+	"github.com/fdurand/go-radius/dictionary"
 )
 
 func TestTestData(t *testing.T) {

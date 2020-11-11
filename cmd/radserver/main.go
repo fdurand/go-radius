@@ -1,4 +1,4 @@
-package main // import "github.com/inverse-inc/go-radius/cmd/radserver"
+package main // import "github.com/fdurand/go-radius/cmd/radserver"
 
 import (
 	"flag"
@@ -7,8 +7,8 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/inverse-inc/go-radius"
-	. "github.com/inverse-inc/go-radius/rfc2865"
+	"github.com/fdurand/go-radius"
+	. "github.com/fdurand/go-radius/rfc2865"
 )
 
 var secret = flag.String("secret", "", "shared RADIUS secret between clients and server")

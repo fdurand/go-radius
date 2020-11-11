@@ -12,8 +12,8 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/inverse-inc/go-radius/dictionary"
-	"github.com/inverse-inc/go-radius/dictionarygen"
+	"github.com/fdurand/go-radius/dictionary"
+	"github.com/fdurand/go-radius/dictionarygen"
 )
 
 type ParseResponse struct {

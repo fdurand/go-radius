@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	radius "github.com/inverse-inc/go-radius"
+	radius "github.com/fdurand/go-radius"
 )
 
 func Test_Tags(t *testing.T) {

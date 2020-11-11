@@ -1,4 +1,4 @@
-module github.com/inverse-inc/go-radius
+module github.com/fdurand/go-radius
 
 go 1.13
 

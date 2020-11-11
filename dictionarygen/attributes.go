@@ -5,7 +5,7 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/inverse-inc/go-radius/dictionary"
+	"github.com/fdurand/go-radius/dictionary"
 )
 
 func (g *Generator) genAttributeStringOctets(w io.Writer, attr *dictionary.Attribute, vendor *dictionary.Vendor) {

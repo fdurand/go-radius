@@ -3,8 +3,8 @@ package aruba_test
 import (
 	"testing"
 
-	radius "github.com/inverse-inc/go-radius"
-	. "github.com/inverse-inc/go-radius/vendors/aruba"
+	radius "github.com/fdurand/go-radius"
+	. "github.com/fdurand/go-radius/vendors/aruba"
 )
 
 func TestLookup(t *testing.T) {
