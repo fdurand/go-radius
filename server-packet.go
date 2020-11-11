@@ -149,6 +149,7 @@ func (s *PacketServer) Serve(conn net.PacketConn) error {
 
 			if !s.InsecureSkipVerify && !IsAuthenticRequest(buff, secret) {
 				spew.Dump("Not authentic")
+				spew.Dump(remoteAddr)
 				spew.Dump(secret)
 				spew.Dump(buff)
 				return
